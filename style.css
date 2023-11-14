@@ -3,21 +3,51 @@
     padding: 0px;
 }
 body{
-    color:rgb(2, 2, 82);
-    font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+    font-size: 32px;
+	url(https://fonts.google.com/specimen/League+Spartan);
+    background-color:hsl(222, 26%, 31%);
 }
 #Container{
 	display: flex ;
 	width: 500px;
-
-
+	text-align: center;
 }
 
 nav{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+	display: flex;
+	flex-direction: row;
     margin: 20px 40px;
+    width: 100vw;
+	height: 50px;
+	background-color: hsl(268, 75%, 9%);
+}
+nav>#text{
+	font-size: 15px;
+	display: flex;
+	color: whitesmoke;
+}
+nav>h1, h2{
+	display: flex;
+	font-size: 10px;
+	margin-left: 100px;
+	color: whitesmoke;
+
+}
+h2{
+	display: grid;
+	grid-template-columns:repeat(3,1fr) ;
+}
+.topbottom{
+	box-sizing: border-box;
+}
+form{
+	display: flex;
+	padding:20px;
+    border: solid 4px grey;
+    border-radius: 10px;
+	background-color: hsl(224, 36%, 15%);
+	margin:20px 0px 20px ;
 }
 
     
@@ -28,19 +58,23 @@ nav{
 	gap: 10px;
 	width: 300px;
 	height: 400px;
-	margin: auto;
+	margin-top: 15px;
+	background-color: hsl(223, 31%, 20%);
+	justify-content: center;
+	align-content: center;
   }
   
   button {
 	font-size: 20px;
-	border: none;
-	border-radius: 5px;
+	border-bottom: 1px solid #999;
+    border-left: 1px solid #999
+	border-radius: 10px;
 	background-color: lightgray;
 	cursor: pointer;
   }
   
-  button:hover {
-	background-color: darkgray;
+  button>.empty:hover {
+	background-color: rgb(133, 19, 19);
   }
   
   .operator {
@@ -67,7 +101,7 @@ nav{
 	grid-column: 3 / 5;
 	grid-row: 5 / 6;
 	color: red;
-
+	padding: 10px 50px 10px 50px;
   }
   
   
@@ -76,21 +110,21 @@ nav{
 	width: 40px;
 	height: 25px;
 	margin: 10px;
-	/* float: left; */
+	float: left;
 	border-radius: 50%;
 	border-width: 0;
 	font-weight: bold;
 	font-size: 15px;
 }
 
-.number {
-	background-color: whitesmoke;
+.number,.operator {
+	background-color: (223, 31%, 20%);
 }
-#Resetbtn, #Delete :hover{
-	background-color: rgb(0, 60, 255);
+#Resetbtn{
+	padding: 10px 50px 10px 50px;
+}
 
-}
 
 .number, .operator {
 	cursor: pointer;
-} */
+} 
