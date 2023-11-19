@@ -5,8 +5,9 @@
 body{
 	font-weight: 700;
     font-size: 32px;
-	url(https://fonts.google.com/specimen/League+Spartan);
-    background-color:hsl(222, 26%, 31%);
+	src: url(https://fonts.google.com/specimen/League+Spartan);
+	background-color: hsl(224, 36%, 15%);
+
 }
 #Container{
 	display: flex ;
@@ -21,6 +22,7 @@ nav{
     width: 100vw;
 	height: 50px;
 	background-color: hsl(268, 75%, 9%);
+
 }
 nav>#text{
 	font-size: 15px;
@@ -37,6 +39,17 @@ nav>h1, h2{
 h2{
 	display: grid;
 	grid-template-columns:repeat(3,1fr) ;
+	font-size: 12px;
+    color: white;
+    margin-left: 300px;
+    margin-top: -20px;
+}
+h1{
+	font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 32px;
 }
 .topbottom{
 	box-sizing: border-box;
